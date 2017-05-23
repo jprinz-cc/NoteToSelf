@@ -32,11 +32,11 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewIdea"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="56dp"
         android:text="TextView"
-        android:textAppearance="@android:style/TextAppearance.Large" />
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_below="@+id/imageViewIdea"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/txtDescription"
@@ -45,6 +45,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtTitle"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="29dp"
         android:text="TextView" />
 
@@ -52,10 +53,9 @@
         android:id="@+id/btnOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_marginBottom="61dp"
+        android:text="@string/ok_button"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/txtTitle"
-        android:layout_marginBottom="63dp"
-        android:text="@string/ok_button" />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
