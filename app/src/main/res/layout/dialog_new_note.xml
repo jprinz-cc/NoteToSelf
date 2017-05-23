@@ -7,7 +7,7 @@
         android:id="@+id/editTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/checkBoxIdea"
+
         android:layout_above="@+id/editDescription"
         android:layout_alignLeft="@+id/checkBoxIdea"
         android:layout_alignParentLeft="true"
@@ -17,7 +17,8 @@
         android:layout_marginRight="35dp"
         android:ems="10"
         android:hint="@string/title_hint"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:text="Title" />
 
     <EditText
         android:id="@+id/editDescription"
@@ -29,7 +30,8 @@
         android:layout_marginBottom="54dp"
         android:ems="10"
         android:hint="@string/description_hint"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:text="Description" />
 
     <CheckBox
         android:text="@string/idea_checkbox"
