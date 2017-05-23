@@ -12,7 +12,7 @@ public class Note {
     private boolean mTodo;
     private boolean mImportant;
 
-    public String getmTitle() {
+    public String getTitle() {
         return mTitle;
     }
 
