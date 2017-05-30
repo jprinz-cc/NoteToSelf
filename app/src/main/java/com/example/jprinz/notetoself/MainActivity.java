@@ -143,15 +143,15 @@ public class MainActivity extends AppCompatActivity {
             Note tempNote = noteList.get(whichItem);
 
             if (!tempNote.isImportant()){
-                ivImportant.setVisibility(View.GONE);
+                ivImportant.setVisibility(View.INVISIBLE);
             }
 
             if (!tempNote.isTodo()){
-                ivTodo.setVisibility(View.GONE);
+                ivTodo.setVisibility(View.INVISIBLE);
             }
 
             if (!tempNote.isIdea()){
-                ivIdea.setVisibility(View.GONE);
+                ivIdea.setVisibility(View.INVISIBLE);
             }
             // Add the text to the heading and description
             txtTitle.setText(tempNote.getTitle());

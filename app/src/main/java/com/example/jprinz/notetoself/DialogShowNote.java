@@ -37,17 +37,18 @@ public class DialogShowNote extends DialogFragment {
         ImageView ivIdea = (ImageView) dialogView.findViewById(R.id.imageViewIdea);
 
         if (!mNote.isImportant()){
-            ivImportant.setVisibility(View.GONE);
+            ivImportant.setVisibility(View.INVISIBLE);
         }
         if (!mNote.isTodo()){
-            ivTodo.setVisibility(View.GONE);
+            ivTodo.setVisibility(View.INVISIBLE);
         }
         if (!mNote.isIdea()){
-            ivIdea.setVisibility(View.GONE);
+            ivIdea.setVisibility(View.INVISIBLE);
         }
 
         Button btnOK = (Button) dialogView.findViewById(R.id.btnOK);
         builder.setView(dialogView).setMessage("Your Note");
+
         btnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,4 +63,6 @@ public class DialogShowNote extends DialogFragment {
     public void sendNoteSelected(Note noteSelected) {
         mNote = noteSelected;
     }
+
+
 }
